@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Carlos Yanes Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee817eb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Imagenes/Logo12.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Acerca</a></li>
+                    <li><a href="#services">Cursos</a></li>
+                    <li><a href="#portfolio">Investigaciones</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Econometrics & Data Science</p>
+                <h1>Hola, <span>Bienvenidos</span>!!</h1>
+            </div>
+        </div>
+    </div>
+<!---------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="Imagenes/Usercy.PNG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> Acerca de Mi</h1>
+                    <p> ¡Hola! Soy Carlos Yanes, un economista con amplia experiencia e interés por el análisis cuantitativo y 
+                        y un gusto por la programación. A lo largo de los años, he adquirido ciertas habilidades en el 
+                        mundo de los datos económicos. Poseo una sólida formación en economía, 
+                        me especializo en temas de econometría de series de tiempo, modelización económica e inclusive
+                        en evaluación de políticas públicas. Mi experiencia se extiende a la utilización 
+                        de varias herramientas estadísticas y softwares, como SPSS, Stata, Eviews, Limdep, entre otros. 
+                        Me encanta abordar cuestiones económicas complejas y transformar 
+                        los datos brutos en información práctica utilizando elementos de lenguajes como lo son R/Rstudio, Python y HTML.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                            <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="habilidades">
+                            <ul>
+                                <li><span>R/Rstudio</span><br> Modelos y Análisis de datos</li>
+                                <li><span>Python</span><br> Optimización</li>
+                                <li><span>Análisis Cuantitativo</span><br> Investigación económica</span></li>
+                                <li><span>Data mining</span><br> Mineria de datos y caracterización</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiencia">
+                            <ul>
+                                <li><span>2019-Presente</span><br> Coordinador de la Maestría en Universidad del Norte</li>
+                                <li><span>2015-2018</span><br> Profesor Asociado en Universidad de El Bosque </li>
+                                <li><span>2010-2018</span><br> Profesor Asistente en Universidad Militar Nueva Granada</span></li>
+                                <li><span>2011-2014</span><br> Instructor y consultor en Universidad Católica de Colombia</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educacion">
+                            <ul>
+                                <li><span>2013</span><br> Master en Economía Universidad de los Andes</li>
+                                <li><span>2006</span><br> Especialista en Cooperación Internacional de la Universidad de San Buenaventura</li>
+                                <li><span>2005</span><br> Economista de la Universidad de Cartagena</span></li>
+                                <li><span>1999</span><br> Bachiller en ciencias básicas en Colegio Diocesano San José </span></li>
+                            </ul>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+<!--------------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Cursos</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-money-bill"></i>
+                <h2>Intro/Economía</h2>
+                <p>Un curso para aquellos que apenas inician su carrera en Economía.
+                    Incluye material de la clase como son sus presentaciones.
+                </p>
+                    <a href="#">Aprende mas</a>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-jet-fighter"></i>
+                <h2>Econometría I</h2>
+                <p>Este curso es para los estudiantes de V Semestre.
+                    Se abordan temas como Regresión y análisis estadístico.
+                </p>
+                    <a href="#">Aprende mas</a>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-column"></i>
+                <h2>Econometría II</h2>
+                <p>Un curso a nivel intermedio para VI semestre en Economía.
+                    Contiene elementos de un curso de series de tiempo y predicción.
+                </p>
+                    <a href="#">Aprende mas</a>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Macroeconomía</h2>
+                <p>Un curso a nivel principiante para todas las carreras.
+                    Contiene elementos de un curso de indicadores Macroeconómicos.
+                </p>
+                    <a href="#">Aprende mas</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-doctor"></i>
+                <h2>Economía de la Salud</h2>
+                <p>Un curso a nivel de Maestría para estudiantes de posgrados.
+                    Posee elementos de un curso para salubristas.
+                </p>
+                    <a href="#">Aprende mas</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h2>Análisis de precios</h2>
+                <p>Un curso de la Maestría en Marketing de Uninorte.
+                    Abarca contenido tématico de programación y segmentos.
+                </p>
+                    <a href="#">Aprende mas</a>
+            </div>
+        </div>
+    </div>    
+</div>
+<!------------------Portafolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> Investigaciones</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Imagenes/work1.jpg">
+                <div class="layer">
+                    <h3>Innovación</h3>
+                    <p>The purpose of this paper is to analyse the role that different financial sources and financial specialization</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Imagenes/work2.jpg">
+                <div class="layer">
+                    <h3>Precios</h3>
+                    <p>Dinámica del precio de la leche en las regiones de Colombia: un análisis de series de tiempo</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Imagenes/work3.jpg">
+                <div class="layer">
+                    <h3>Mercado Laboral</h3>
+                    <p>La reforma laboral de 2002 y la dinámica del empleo industrial en Colombia</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Ver mas</a>
+    </div>
+
+</div>
+<!--------Contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacto</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> cayanes@uninorte.edu.co</p>
+                <p><i class="fa-solid fa-phone-square-alt"></i> +57(605) 3509509 Ext. 4594</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/keynes37"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://orcid.org/0000-0003-0683-3727"><i class="fa-brands fa-orcid"></i></a>
+                    <a href="https://github.com/keynes37"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/carlos-andres-yanes-guerra-0026bb31/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Imagenes/Cv_2024_Carlos_Yanes_G.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Su Nombre" required>
+                    <input type="email" name="Email" placeholder="Su Email" required>
+                    <textarea name="Message" rows="6" placeholder="Su Mensaje"></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Carlos Yanes. Made with <i class="fa-solid fa-heart"></i> in Easy Tutorials  </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemeu.style.right= "0";
+}
+
+function closemenu(){
+    sidemeu.style.right= "-200px";
+}
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKXf9pBipr47tU0jVNx59OjKAvq6LmU65xw1TzsBBbY5QVvo7YQsMi2JklqH1MuLsI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "El mensaje ha sido enviado"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
