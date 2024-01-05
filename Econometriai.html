@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Econometría Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee817eb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerEc">
+        <div class="container">
+            <nav>
+                <img src="Imagenes/Logo12.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Acerca</a></li>
+                    <li><a href="index.html#services">Cursos</a></li>
+                    <li><a href="index.html#portfolio">Investigaciones</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text-I">
+                <h1>Introducción a la Econometría</h1>
+                <h3>Métodos Cuantitativos</h3>
+            </div>
+        </div>
+    </div>
+
+<!---- close ---->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="Imagenes/econclass1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> Material de Clase</h1>
+                <p> Este es un primer curso en Econometría. Se usan elementos teóricos de la Estadistica, cálculo y de la misma
+                    teoría Económica. La idea general es que los estudianytes entiendan de la importancia de construir
+                    sus primeros modelos en economía.
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('clases')">Clases</p>
+                        <p class="tab-links" onclick="opentab('manual')">Manual R</p>
+                        <p class="tab-links" onclick="opentab('proyectos')">Class Project</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="clases">
+                        <ul>
+                            <li>Introducción | <a href="https://bb.githack.com/Keynes37/econometria-i/raw/main/Class/Clase%2001%20intro/Clase1Econ.html#1">Clase 01</a> | <a href="">.pdf</a>  </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="manual">
+                        <ul>
+                            <li>Instalación Rstudio y R | <i class="fa-solid fa-file"></i> <a href="https://bb.githack.com/Keynes37/guideeconometrics/raw/master/Guias/G1.html">Guía 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="proyectos">
+                        <ul>
+                            <li>Taller 1 | Archivo | Datos </li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="copyright">
+        <p>Copyright © Carlos Yanes. Uninorte  I <i class="fa-solid fa-heart"></i> EcoCampus  </p>
+    </div>
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    
+    </script>
+</body>
+</html>
