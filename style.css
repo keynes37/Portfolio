@@ -336,6 +336,14 @@ form .btn2{
     color: #ff004f;
 }
 
+/*--------para pagina adicional */
+.caja-roja {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
 /*---------- css for small screens-----------*/
 nav .fas{
     display: none;
