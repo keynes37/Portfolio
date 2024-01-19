@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Economía de la Salud Website</title>
+    <link rel="stylesheet" href="stwhite.css">
+    <script src="https://kit.fontawesome.com/bee817eb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerEc">
+        <div class="container">
+            <nav>
+                <img src="Imagenes/Logo13.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Acerca</a></li>
+                    <li><a href="index.html#services">Cursos</a></li>
+                    <li><a href="index.html#portfolio">Investigaciones</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text-I">
+                <h1>Economía de la Salud</h1>
+                <h3>Maestría en Salud Pública</h3>
+            </div>
+        </div>
+    </div>
+
+<!---- close ---->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="https://media.giphy.com/media/K61ByIKDUSs9P2KdGY/giphy.gif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> Material de Clase</h1>
+                <p> El curso de análisis de Economía de la salud es competente para todo el personal
+                    asociado a las áreas de trabajo de las distintas instituciones de salud pública que desean
+                    mejorar en el contexto y entorno de los momentos y hechos económicos
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('clases')">Clases</p>
+                        <p class="tab-links" onclick="opentab('lectura')">Lecturas</p>
+                        <p class="tab-links" onclick="opentab('proyectos')">Proyectos</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="clases">
+                        <ul>
+                            <li>Introducción | <a href="https://bb.githack.com/Keynes37/econometria-i/raw/main/Class/Clase%2001%20intro/Clase1Econ.html#1">Clase 01</a> | <a href="">.pdf</a>  </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="lectura">
+                        <ul>
+                            <li>Lectura 1 | <i class="fa-solid fa-file"></i> <a href="https://bb.githack.com/Keynes37/guideeconometrics/raw/master/Guias/G1.html">Guía 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="proyectos">
+                        <ul>
+                            <li>Proyecto 1 | Archivo adicional </li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="copyright">
+        <p>Copyright © Carlos Yanes. Uninorte  I <i class="fa-solid fa-heart"></i> EcoCampus  </p>
+    </div>
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    
+    </script>
+</body>
+</html>

@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background:#fff; 
+    color: #080808;
 }
 
 html{
@@ -48,7 +48,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #080808;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -81,7 +81,7 @@ color: #ff004f;
 /*----------about----------*/
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #808080;
 }
 .row{
     display: flex;
@@ -103,7 +103,7 @@ color: #ff004f;
 .sub-title{
 font-size: 60px;
 font-weight: 600;
-color: #fff;
+color: #080808;
 }
 
 .tab-titles{
@@ -142,7 +142,7 @@ color: #fff;
 }
 
 .tab-contents ul li a{
-    color: #FFA500;
+    color: #ff004f;
 }
 
 .tab-contents ul li a:hover{
@@ -184,7 +184,7 @@ color: #fff;
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #080808;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -244,7 +244,7 @@ color: #fff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #080808;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -264,7 +264,7 @@ color: #fff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #080808;
     transition: background 0.5s;
 }
 .btn:hover{
@@ -315,7 +315,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color:#080808;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -329,18 +329,18 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #ff004f;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #1414b8;
 }
 
 /*--------para pagina adicional */
 .caja-roja {
     background-color: red;
-    color: white;
+    color: #080808;
     padding: 10px;
     margin: 5px;
 }
