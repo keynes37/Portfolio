@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Econometría Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee817eb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerEc">
+        <div class="container">
+            <nav>
+                <img src="Imagenes/Logo12.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Acerca</a></li>
+                    <li><a href="index.html#services">Cursos</a></li>
+                    <li><a href="index.html#portfolio">Investigaciones</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text-I">
+                <h1>Artículos y documentos de trabajo</h1>
+            </div>
+        </div>
+    </div>
+
+<!---- blog & invest ---->
+
+<section class="blog-article">
+    <div class="row">
+        <div class="blog-left">
+            <img src="Imagenes/Tayron.jpg" alt="">
+            <h2>Otros artículos de investigación</h2>
+            <br>
+            <p>Mendoza Tolosa, H. A., & Yanes Guerra, C. A. (2014). Impacto del gasto público en la dinámica económica regional. 
+               Revista Finanzas y Política Económica, 6(1), 23-41.
+               <a href="http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S2248-60462014000100002">Acceso Web</a>
+               </p>
+            <br>
+            <p>Poveda, J. P. V., Pulido, C. G. R., & Guerra, C. A. Y. (2014). 
+                La influencia de los determinantes macroeconómicos en la cartera comercial 
+                de crédito de consumo en Colombia (2006-2010). Criterios Revista Estudiantes 
+                Facultad De Ciencias Económicas, 4(1), 5-32.</p>
+            <br>
+            <p>Yanes Guerra, C. A. (2013). Efecto de la Reforma Laboral (Ley 789 de 2002) en 
+                la dinámica del empleo industrial. <a href="https://repositorio.uniandes.edu.co/entities/publication/fbbfaf5d-1178-4527-a265-32685b565fe7">Acceso Web</a>
+            </p>
+            <br>
+            <br>
+
+    <h4> Documentos de Trabajo </h4>
+    <br>
+    <p>Guerra, C. A. Y., & Pi, W. J. R. (2014). La duracion del desempleo en 
+    Colombia: Los efectos de la ley 1429 de 2010 (No. 012413). 
+    Universidad Católica de Colombia.</p>
+    <br>
+    <p> Piñerez, W. J. R., & Guerra, C. A. Y. (2014). 
+    Duration Models to Evaluate First Employment Law's Impact in Colombia (No. 012417). 
+    Universidad Católica de Colombia.</p>
+    <br>
+    <h2>Areas de interés</h2>
+    <h3>Data Science</h3>
+    <p>Frente a los retos y necesidades del análisis de datos. Me he formado con el 
+            Mintic en el curso de Data science for All. Mi interés es la aplicación de 
+            metodologías cuantitativas y cualitativas con el objeto de resolver 
+            problemas de investigación a partir del data wrangling, data mining y Modeling.</p>
+    <br>
+    <h3>Mercado Laboral</h3>
+    <p>Uno de mis temas preferidos en cuanto a ver como evolucionan las variables 
+        de empleabilidad en el país como a su vez a nivel internacional. 
+        Buscar siempre estrategias que permitan formalizar a las personas y 
+        optimizar el uso de la mano de obra a nivel optimo me permite vincularme 
+        en este tipo de temas y tópicos.  
+    </p>
+    <br>
+    <h3>Series de Tiempo</h3>
+    <p>Una de las herramientas mas poderosas en la econometría y estadística. 
+        Con ésta he venido aplicando modelos univariados dinámicos de factores de 
+        predicción como a su vez las técnicas parámetricas y no parámetricas.
+    </p>
+    <br>
+    <h3>Innovación y financiamiento</h3>
+    <p>Los temas de innovación no pasan de moda. Mediante modelos de Panel he participado 
+    en la investigación del desarrollo de los mercados financieros en la inversión 
+    privada en I+D de los países de la OCDE. 
+    El proposito es ayudar a los responsables políticos a generar políticas 
+    eficaces para estimular la innovación, especialmente en los países subdesarrollados.</p>
+</div>
+        <div class="blog-right">
+            <h3>Temas de trabajo</h3>
+            <div> 
+                <span>Mercado Laboral</span> 
+                <span>2</span>
+            </div>
+            <div>
+                <span>Capital Humano</span>
+                <span>1</span>         
+            </div>
+            <div>
+                <span>Habitante de Calle</span>
+                <span>1</span>         
+            </div>
+            <div>
+                <span>Ciencia de Datos</span>
+                <span>2</span>         
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <div class="copyright">
+        <p>Copyright © Carlos Yanes. Uninorte  I <i class="fa-solid fa-heart"></i> EcoCampus  </p>
+    </div>
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    
+    </script>
+</body>
+</html>
