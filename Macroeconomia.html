@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Macroeconomía Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee817eb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerEc">
+        <div class="container">
+            <nav>
+                <img src="Imagenes/Logo12.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Acerca</a></li>
+                    <li><a href="index.html#services">Cursos</a></li>
+                    <li><a href="index.html#portfolio">Investigaciones</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text-I">
+                <h1>Principios de Macroeconomía</h1>
+                <h3>Departamento de Economía</h3>
+            </div>
+        </div>
+    </div>
+
+<!---- List of Class ---->
+
+<div class="caja-roja">
+<h3>Presentaciones</h3>
+<p>Los archivos de las clases estarán disponibles al final de cada semana</p>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajVmaGIwZGN1NGlsenhvNXhuY3pzcTNmNnJ5aGFyMjIxMDcweHphMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9dgUAcCsQGM7KolZaA/giphy.gif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> Material de Clase</h1>
+                <p> El estudio de los principios de macroeconomía es fundamental para comprender cómo funcionan 
+                    las economías a nivel agregado y cómo las decisiones individuales de consumidores, 
+                     empresas y gobiernos impactan en variables económicas clave. A través de este curso, 
+                     los estudiantes explorarán conceptos fundamentales como el producto interno bruto 
+                     (PIB), la inflación, el desempleo y el crecimiento económico. 
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('clases')">Clases</p>
+                        <p class="tab-links" onclick="opentab('complementos')">Complementos de clase</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="clases">
+                        <ul>
+                            <li>Introducción | <a href="https://raw.githack.com/keynes37/Pmacroeconomics/main/Class00.html#/title-slide">Semana 01</a></li>
+                            <li>Cuenta Nacional  | <a href="https://raw.githack.com/keynes37/Pmacroeconomics/main/Class01.html#/title-slide">Semana 02</a></li>
+                            <li>PIB y Crecimiento | <a href="#">Semana 03</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="complementos">
+                        <ul>
+                            <li>Libro de Openstax | <i class="fa-solid fa-file"></i> <a href="https://openstax.org/details/books/principles-macroeconomics-3e">Principles of macroeconomics</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="copyright">
+        <p>Copyright © Carlos Yanes. Uninorte  I <i class="fa-solid fa-heart"></i> EcoCampus  </p>
+    </div>
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    
+    </script>
+</body>
+</html>
