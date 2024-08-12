@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Econometría (Maestría) Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee817eb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerEc">
+        <div class="container">
+            <nav>
+                <img src="Imagenes/Logo12.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Acerca</a></li>
+                    <li><a href="index.html#services">Cursos</a></li>
+                    <li><a href="index.html#portfolio">Investigaciones</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text-I">
+                <h1>Econometría</h1>
+                <h3>Evaluación de Impacto</h3>
+            </div>
+        </div>
+    </div>
+
+<!---- close ---->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmQwNXV4cmlmOHUyY2t4d3NzM2x2eWhocm5rbXA0cnRhaHI5Ym5pbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnATxHYdAV2CE4o/giphy.gif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> Material de Clase</h1>
+                <p> Este es un curso en Técnicas de Evaluación de Impacto para un amplio espectro de proyectos. Esta diseñado para estudiantes de Maestría y Doctorado que tienen un fuerte interés en los métodos cuantitativos.
+                    Los elementos, artículos y material se irá colgando en esta página semana a semana.
+                    Puede consultar el Syllabus dando click <a href="Elementos/Syllabus/Evaluación de impacto ME.pdf">aquí</a>
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('clases')">Clases</p>
+                        <p class="tab-links" onclick="opentab('manual')">Guía en R</p>
+                        <p class="tab-links" onclick="opentab('proyectos')">Proyectos</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="clases">
+                        <ul>
+                            <li>Introducción <br>
+                            Clase 1<a href="https://keynes37.github.io/MasterImpact/Class/Class00.html">.html</a> </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="manual">
+                        <ul>
+                            <li>Modelo RTC <br>
+                            <i class="fa-solid fa-file"></i> <a href="#">Guía 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="proyectos">
+                        <ul>
+                            <li>Work 1 | <a href="#">Archivo</a> | Datos </li>
+                            <li>Work 2 | <a href="#">Archivo</a> | Datos </li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="copyright">
+        <p>Copyright © Carlos Yanes. Uninorte  I <i class="fa-solid fa-heart"></i> EcoCampus  </p>
+    </div>
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    
+    </script>
+</body>
+</html>
